@@ -1,0 +1,403 @@
+/*
+
+UTIL
+
+*/
+
+a, a:link, a.visited, a.active, a.hover {
+  text-decoration: none;
+}
+
+.body-background{
+  background-color: #78746f;
+  margin: 0;
+  font-family: Arial;
+}
+
+.buttons-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 1.0rem;
+  margin: 0rem 1.5rem 1rem 0rem;
+  padding: 0rem 0rem 0rem 1rem;
+}
+
+.button-selector {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f5f0e4;
+  font-weight: 400;
+  font-size: 1vw;
+  width: 13vw;
+  height: 5vw;
+  font-weight: bold;
+  
+} 
+
+.button-selector:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: #ffd5a1;
+  cursor: pointer;
+}
+
+.button-selector:focus {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: #ffd5a1;
+  cursor: pointer;
+}
+
+
+/*
+
+NAVBAR
+
+*/
+
+.navbar-nav {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  background-color: #3d392f;
+  height: 0px;
+  padding: 48px 64px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-btn {
+  background-color: #3d392f;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 1.25rem;
+}
+
+.navbar-btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: #595447;
+  cursor: pointer;
+}
+
+.navbar-btn:focus {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: #595447;
+  cursor: pointer;
+}
+
+.navbar-btn-text {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #faec98;
+  text-decoration: none;
+}
+
+.navbar-logotext, .navbar-navs {
+  margin: 0;
+  font-weight: bold;
+}
+
+.navbar-logotext {
+  margin-right: auto;
+  color: #f5f0e4;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.navbar-navs {
+  color: #ffd5a1;
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: inline-flex;
+}
+
+.navbar-icon {
+  height: 5rem;
+  margin-right: 7px;
+}
+
+/*
+
+ABOUTME
+
+*/
+
+.aboutme-wrapper{
+  align-items: center;
+  max-width: 1000px;
+  max-height: 500px;
+  margin: auto;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 5rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.aboutme-line {
+  color: #f5f0e4;
+  line-height: 150%;
+  font-weight: 400;
+  font-size: 1.15vw;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.aboutme-name {
+  color: #faec98;
+  font-weight: 600;
+  font-size: 2.5vw;
+  padding: 1rem 0rem 0rem 1rem;
+  margin: 0% 0%;
+}
+
+.aboutme-subname {
+  color: #faec98;
+  font-weight: 400;
+  font-size: 2vw;
+  padding: 1rem 0rem 0rem 1rem;
+  margin: 0% 0%;
+}
+
+.aboutme-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  background-color: #3d392f;
+  padding: 1rem;
+  display: inline-flex;
+  max-width: 70%;
+}
+
+
+/*
+
+ITEMSELECTOR
+
+*/
+
+.itemselector-wrapper{
+  align-items: center;
+  max-width: 50%;
+  min-width: 50%;
+  max-height: 500px;
+  margin: auto;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+  margin-left: 2rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.itemselector-title{
+  color: #faec98;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 0%;
+  font-weight: bold;
+}
+
+.itemselector-line{
+  color: #f5f0e4;
+  line-height: 150%;
+  font-weight: 400;
+  font-size: 1vw;
+  margin: 0rem 1rem 1rem 0rem;
+}
+
+.itemselector-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  background-color: #3d392f;
+  padding: 1rem;
+  min-height: 23.5rem;
+}
+
+.itemselector-display-wrapper{
+  display: flex;
+}
+
+.itemselector-image-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  flex: 1
+}
+
+.itemselector-image{
+  margin-top: 5rem;
+  max-width: 90%;
+  max-height: 70%;
+  object-fit: contain;
+  object-position: center top
+}
+
+/*
+
+FEEDBACK PAGE AND FORM
+
+*/
+
+.feedback-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-top: 3rem;
+  flex-direction: column;
+}
+
+.feedback-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  background-color: #3d392f;
+  padding: 1rem;
+  width: 50%;
+  flex-direction: row;
+  margin-bottom: 3rem;
+  border: 4px solid #ffd5a1;
+  border-radius: 1em;
+}
+
+.feedback-form-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  background-color: #3d392f;
+  padding: 1rem;
+  width: 50%;
+  flex-direction: row;
+  margin-bottom: 3rem;
+  color: white;
+  padding: 2rem 5rem;
+}
+
+.feedback-form-line {
+  color: #f5f0e4;
+  line-height: 150%;
+  font-weight: 400;
+  font-size: 1.15vw;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.feedback-btn-wrapper {
+  display: flex;
+  margin-left: 10px;
+}
+
+.feedback-btn {
+  background-color: #3d392f;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 1.25rem;
+  width: 300px;
+  background-color: #595447;
+  margin-left: 30%
+
+}
+
+.feedback-btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: #6d6757;
+  cursor: pointer;
+}
+
+.feedback-btn:focus {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: #6d6757;
+  cursor: pointer;
+}
+
+.feedback-btn-text {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #faec98;
+  text-decoration: none;
+}
+
+/*
+
+Used Mozilla Basic Form Styling as outline for this css - https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form
+
+*/
+
+form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 4px solid #ffd5a1;
+  border-radius: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.slidecontainer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/*
+
+Used W3 Schools on sliders to override base slider attributes - https://www.w3schools.com/howto/howto_js_rangeslider.asp
+
+*/
+
+.slider {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 7.5px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin: auto;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; 
+  background: #ff6a4f;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ff6a4f;
+  cursor: pointer;
+}
+

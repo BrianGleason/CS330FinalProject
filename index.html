@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <title>CSS Animation and JavaScript</title>
+  </head>
+  <body class="body-background">
+    <nav class="navbar-nav">
+      <div class="navbar-logotext">Brian Gleason</div>
+      <div class="navbar-navs">
+          <a href="./index.html" class="navbar-btn" aria-label="Projects Page Link" role="navigation"> 
+              <div class="navbar-btn-text">Projects</div>
+          </a>
+          <a href="./aboutme.html" class="navbar-btn" aria-label="About Me Page Link" role="navigation"> 
+            <div class="navbar-btn-text">About Me</div>
+          </a>
+          <a href="./experience.html" class="navbar-btn" aria-label="Experience Page Link" role="navigation"> 
+              <div class="navbar-btn-text">Experience</div>
+          </a>
+          <a href="./feedback.html" class="navbar-btn" aria-label="Feedback Page Link" role="navigation"> 
+            <div class="navbar-btn-text">Feedback</div>
+          </a>
+          <a href="./BrianGleasonResume.pdf" class="navbar-btn" aria-label="Resume PDF Link" role="navigation"> 
+              <div class="navbar-btn-text">Resume</div>
+          </a>
+      </div>
+    </nav>
+    <main>
+      <div class="itemselector-display-wrapper" id="Projects">
+        <div class="itemselector-wrapper">
+            <div class="itemselector-card">
+                <div class="itemselector-title"> Projects </div>
+                <div class="itemselector-display-wrapper">
+                    <div class="buttons-wrapper">
+                      <button class="button-selector" onclick="setCROWNS();" aria-label="View CROWNS Project Button">
+                          <div> CROWNS Prototype</div>
+                      </button>
+                      <button class="button-selector" onclick="setTwitter();" aria-label="View Twitter Project Button">
+                          <div> Twitter NLP Analyzer</div>
+                      </button>
+                      <button class="button-selector" onclick="setOLM();" aria-label="View Online Markets Project Button">
+                        <div> Online Learning Algorithms </div>
+                      </button>
+                    </div>
+                    <div>
+                      <p class="itemselector-line">
+                        In four weeks, developed a product prototype webapp with team of classmates for team of MBA students at Northwestern's Kellogg School of Management to help people with less common hairtypes.<br/><br/>
+                        CROWNS was designed to provide users a way to learn more about their hair and a community that can support them in finding products, stylists, and haircare recommendations from people who have had similar experiences. <br/><br/>
+                        Built the prototype using React for the frontend, Google Auth for user information and security, Google Firestore and Firebase for data storage, Cypress for end-to-end testing, and Github Workflows for the CI/CD pipeline. <br/><br/>
+                        Utilized frequent user testing, generation of user stories, and feedback from the project management team to continually improve user experience.
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="itemselector-image-wrapper">
+            <img src="./CROWNS.jpg" class="itemselector-image" alt="Architecture Diagram of CROWNS"/>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="feedback.js"></script>
+    <title>CSS Animation and JavaScript</title>
+  </head>
+  <body class="body-background">
+    <nav class="navbar-nav">
+      <div class="navbar-logotext">Brian Gleason</div>
+      <div class="navbar-navs">
+          <a href="./index.html" class="navbar-btn" aria-label="Projects Page Link" role="navigation"> 
+              <div class="navbar-btn-text">Projects</div>
+          </a>
+          <a href="./aboutme.html" class="navbar-btn" aria-label="About Me Page Link" role="navigation"> 
+            <div class="navbar-btn-text">About Me</div>
+          </a>
+          <a href="./experience.html" class="navbar-btn" aria-label="Experience Page Link" role="navigation"> 
+              <div class="navbar-btn-text">Experience</div>
+          </a>
+          <a href="./feedback.html" class="navbar-btn" aria-label="Feedback Page Link" role="navigation"> 
+            <div class="navbar-btn-text">Feedback</div>
+          </a>
+          <a href="./BrianGleasonResume.pdf" class="navbar-btn" aria-label="Resume PDF Link" role="navigation"> 
+              <div class="navbar-btn-text">Resume</div>
+          </a>
+      </div>
+    </nav>
+    <main>
+      <div>
+        <div class="feedback-wrapper">
+          <form class="feedback-form-card">
+            <div class="feedback-form-line">
+              <label for="Subject" id="subject label">Feedback Subject:</label>
+                <input type="text" id="subject" aria-labelledby="subject label"/>
+            </div>
+            <div class="feedback-form-line">
+              <label for="Category" id="category label">Feedback Category:</label>
+              <input type="text" id="category" aria-labelledby="category label"/>
+            </div>
+            <div class="feedback-form-line">
+              <label for="Rating" id="ratingvalue">Severity Rating: 3</label>
+              <div class="slidecontainer" aria-labelledby="ratingvalue">
+                <input id="rating" type="range" min="1" max="5" value="3" class="slider">
+              </div>
+            </div>
+            <div class="feedback-form-line">
+              <label for="Date" id="date label">Encounter Date:</label>
+              <input type="date" id="date" aria-labelledby="date label"/>
+            </div>
+            <div class="feedback-form-line">
+              <label for="Body" id="body label">Feedback:</label>
+              <textarea type="text" id="body" aria-labelledby="body label"></textarea> 
+            </div>
+            <div class="feedback-btn-wrapper">
+              <button class="feedback-btn" onclick="setCommentList();" type="button" aria-label="Submit Form Button"> 
+                <div class="feedback-btn-text">Submit</div>
+              </button>
+            </div>
+          </form>
+
+        </div>
+        <div class="feedback-wrapper" id="CommentList">
+            <div class="feedback-card" tabindex="0">
+                <div class="aboutme-line">
+                    Feedback Subject: Design
+                </div>
+                <div class="aboutme-line">
+                    Feedback Category: Portfolio
+                </div>
+                <div class="aboutme-line">
+                    Severity Rating: 1
+                </div>
+                <div class="aboutme-line">
+                    Feedback: I really don't like the colors. Change the colors.
+                </div>
+                <div class="aboutme-line">
+                    Submission Date: 11/27/22
+                </div>
+            </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

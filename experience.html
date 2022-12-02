@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <title>CSS Animation and JavaScript</title>
+  </head>
+  <body class="body-background">
+    <nav class="navbar-nav">
+      <div class="navbar-logotext">Brian Gleason</div>
+      <div class="navbar-navs">
+          <a href="./index.html" class="navbar-btn" aria-label="Projects Page Link" role="navigation"> 
+              <div class="navbar-btn-text">Projects</div>
+          </a>
+          <a href="./aboutme.html" class="navbar-btn" aria-label="About Me Page Link" role="navigation"> 
+            <div class="navbar-btn-text">About Me</div>
+          </a>
+          <a href="./experience.html" class="navbar-btn" aria-label="Experience Page Link" role="navigation"> 
+              <div class="navbar-btn-text">Experience</div>
+          </a>
+          <a href="./feedback.html" class="navbar-btn" aria-label="Feedback Page Link" role="navigation"> 
+            <div class="navbar-btn-text">Feedback</div>
+          </a>
+          <a href="./BrianGleasonResume.pdf" class="navbar-btn" aria-label="Resume PDF Link" role="navigation"> 
+            <div class="navbar-btn-text">Resume</div>
+          </a>
+      </div>
+    </nav>
+    <main>
+      <div class="itemselector-display-wrapper" id="Experience">
+        <div class="itemselector-wrapper">
+            <div class="itemselector-card">
+                <div class="itemselector-title"> Experience </div>
+                <div class="itemselector-display-wrapper">
+                    <div class="buttons-wrapper">
+                      <button class="button-selector" onclick="setCMEGroup();" aria-label="View CME Group Button">
+                          <div> CME Group</div>
+                      </button>
+                      <button class="button-selector" onclick="setCloudHealth();" aria-label="View CloudHealth Button">
+                          <div> CloudHealth</div>
+                      </button>
+                      <button class="button-selector" onclick="setPeerMentor();" aria-label="View Peer Mentor Button">
+                        <div> Peer Mentor </div>
+                      </button>
+                    </div>
+                    <div>
+                      <p class="itemselector-line">
+                        Redesigned and updated Asset Management system and user interface using Java, React, and SQL, a system that handles the data for what asset types CME Group accepts as liquidity from its customers. <br/><br/>
+                        Designed interface for Asset Management system with React and Redux for effective state management, utilizing code splitting, filtering, searching, user inputs, and notifications confirming user actions and mistakes. <br/><br/>
+                        Iterated on and improved project by adding new functionality to improve user experience, synchronizing styling with similar services, improving code formatting, and making optimization improvements across other pages, drawing from constructive feedback from end users, QA team, and end of internship presentation. 
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="itemselector-image-wrapper">
+            <img src="./CMECollage.jpg" class="itemselector-image" alt="Collage of skills developed at CME Group"/>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
